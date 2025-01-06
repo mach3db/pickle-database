@@ -52,7 +52,7 @@ class Mach3DBPickleDatabase(object):
                         pickle.dumps(
                             value,
                             protocol=pickle.HIGHEST_PROTOCOL
-                        ),
+                        )
                     )
                 )
 
