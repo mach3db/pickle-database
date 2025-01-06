@@ -48,7 +48,7 @@ class Mach3DBPickleDatabase(object):
         if fernet:
             with open(path, "wb") as f:
                 f.write(
-                    self.fernet.encrypt(
+                    fernet.encrypt(
                         pickle.dumps(
                             value,
                             protocol=pickle.HIGHEST_PROTOCOL
